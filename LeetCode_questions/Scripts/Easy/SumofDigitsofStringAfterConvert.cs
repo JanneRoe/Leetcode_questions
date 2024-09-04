@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode_questions.Scripts
+namespace LeetCode_questions.Scripts.Easy
 {
     public class SumofDigitsofStringAfterConvert
     {
@@ -41,33 +41,33 @@ namespace LeetCode_questions.Scripts
         public int GetLetterNumber(char letter)
         {
             if (letter == 'a' || letter == 'A' ||
-                letter == 'j' || letter == 'J' || 
+                letter == 'j' || letter == 'J' ||
                 letter == 's' || letter == 'S') { return 1; }
-            if (letter == 'b' || letter == 'B' || 
+            if (letter == 'b' || letter == 'B' ||
                 letter == 'k' || letter == 'K' ||
                 letter == 't' || letter == 'T') { return 2; }
             if (letter == 'c' || letter == 'C' ||
-                letter == 'l' || letter == 'L' || 
+                letter == 'l' || letter == 'L' ||
                 letter == 'u' || letter == 'U') { return 3; }
-            if (letter == 'd' || letter == 'D' || 
+            if (letter == 'd' || letter == 'D' ||
                 letter == 'm' || letter == 'M' ||
                 letter == 'v' || letter == 'V') { return 4; }
-            if (letter == 'e' || letter == 'E' || 
+            if (letter == 'e' || letter == 'E' ||
                 letter == 'n' || letter == 'N' ||
                 letter == 'w' || letter == 'W') { return 5; }
-            if (letter == 'f' || letter == 'F' || 
+            if (letter == 'f' || letter == 'F' ||
                 letter == 'o' || letter == 'O' ||
                 letter == 'x' || letter == 'X') { return 6; }
-            if (letter == 'g' || letter == 'G' || 
+            if (letter == 'g' || letter == 'G' ||
                 letter == 'p' || letter == 'P' ||
                 letter == 'y' || letter == 'Y') { return 7; }
             if (letter == 'h' || letter == 'H' ||
                 letter == 'q' || letter == 'Q' ||
                 letter == 'z' || letter == 'Z') { return 8; }
-            if (letter == 'i' || letter == 'I' || 
+            if (letter == 'i' || letter == 'I' ||
                 letter == 'r' || letter == 'R') { return 9; }
-            
-            else {  return 0; }
+
+            else { return 0; }
         }
 
         public int GetIntLetter(string s)

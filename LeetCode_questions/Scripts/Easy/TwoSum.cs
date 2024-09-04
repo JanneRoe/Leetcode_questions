@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LeetCode_questions.Scripts
+namespace LeetCode_questions.Scripts.Easy
 {
     /*Given an array of integers nums and an integer target, 
      * return indices of the two numbers such that they add up to target.
@@ -17,17 +17,17 @@ namespace LeetCode_questions.Scripts
         {
             int[] result = new int[2];
             int i, j;
-            for (i = 0; i < nums.Length; i++) 
+            for (i = 0; i < nums.Length; i++)
             {
                 var n = nums[i];
-                for (j = i + 1; j < nums.Length; j++) 
+                for (j = i + 1; j < nums.Length; j++)
                 {
                     var m = nums[j];
 
-                    if((n+m) == target)
+                    if (n + m == target)
                     {
-                        result = [ i, j ];
-                        return result;                        
+                        result = [i, j];
+                        return result;
                     }
                     else
                     {
@@ -35,7 +35,7 @@ namespace LeetCode_questions.Scripts
                     }
                 }
             }
-            result = [0,0];
+            result = [0, 0];
             return result;
         }
     }

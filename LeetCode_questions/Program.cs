@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using LeetCode_questions.Scripts;
+using LeetCode_questions.Scripts.Easy;
 
 //while (true)
 //{
