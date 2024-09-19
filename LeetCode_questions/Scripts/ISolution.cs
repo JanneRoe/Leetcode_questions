@@ -8,6 +8,11 @@ namespace LeetCode_questions.Scripts
 {
     public interface ISolution
     {
-        public dynamic Solution<T>(string[][] query);
+        public dynamic Solution<T>(SolutionArgs args);
+    }
+
+    public class SolutionArgs
+    {
+
     }
 }

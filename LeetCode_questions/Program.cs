@@ -166,22 +166,58 @@ using LeetCode_questions.Scripts.Medium;
 #endregion
 
 #region Merge Two sorted Lists
-// Crear las dos listas enlazadas para la prueba
-ListNode list1 = ListNodeUtils.Create(new int[] { 1, 2, 4 });
-ListNode list2 = ListNodeUtils.Create(new int[] { 1, 3, 4 });
+//// Crear las dos listas enlazadas para la prueba
+//ListNode list1 = ListNodeUtils.Create(new int[] { 1, 2, 4 });
+//ListNode list2 = ListNodeUtils.Create(new int[] { 1, 3, 4 });
 
-// Imprimir las listas antes de combinarlas
-Console.WriteLine("Lista 1:");
-ListNodeUtils.Print(list1);
+//// Imprimir las listas antes de combinarlas
+//Console.WriteLine("Lista 1:");
+//ListNodeUtils.Print(list1);
 
-Console.WriteLine("Lista 2:");
-ListNodeUtils.Print(list2);
+//Console.WriteLine("Lista 2:");
+//ListNodeUtils.Print(list2);
 
-// Llamar a la función MergeTwoLists
-var mergeTwoLists = new MergeTwoSortedLists();
-ListNode mergedList = mergeTwoLists.Solution(list1, list2);
+//// Llamar a la función MergeTwoLists
+//var mergeTwoLists = new MergeTwoSortedLists();
+//ListNode mergedList = mergeTwoLists.Solution(list1, list2);
 
-// Imprimir la lista combinada
-Console.WriteLine("Lista combinada:");
-ListNodeUtils.Print(mergedList);
+//// Imprimir la lista combinada
+//Console.WriteLine("Lista combinada:");
+//ListNodeUtils.Print(mergedList);
+#endregion
+
+#region Remove Number Duplicates
+//var removeDuplicates = new RemoveDuplicatesFromSortedArray();
+//int[] nums = [1, 1, 2];
+//var k = removeDuplicates.Solution(nums);
+//Console.WriteLine(k);
+//nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+//k = removeDuplicates.Solution(nums);
+//Console.WriteLine(k);
+#endregion
+
+#region Remove Element
+//var removeDuplicates = new RemoveElement();
+//int[] nums = [3,2,2,3];
+//var val = 3;
+//var k = removeDuplicates.Solution(nums, val);
+//Console.WriteLine(k);
+//nums = [0, 1, 2, 2, 3, 0, 4, 2];
+//val = 2;
+//k = removeDuplicates.Solution(nums, val);
+//Console.WriteLine(k);
+#endregion
+
+#region Search Insert Position
+var searchPosition = new SearchInsertPosition();
+int[] nums = [1, 3, 5, 6];
+int target = 5;
+var result = searchPosition.Solution(nums, target);
+Console.WriteLine(result);
+target = 2;
+result = searchPosition.Solution(nums, target);
+Console.WriteLine(result);
+target = 7;
+result = searchPosition.Solution(nums, target);
+Console.WriteLine(result);
 #endregion
