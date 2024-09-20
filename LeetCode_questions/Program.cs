@@ -209,15 +209,69 @@ using LeetCode_questions.Scripts.Medium;
 #endregion
 
 #region Search Insert Position
-var searchPosition = new SearchInsertPosition();
-int[] nums = [1, 3, 5, 6];
-int target = 5;
-var result = searchPosition.Solution(nums, target);
-Console.WriteLine(result);
-target = 2;
-result = searchPosition.Solution(nums, target);
-Console.WriteLine(result);
-target = 7;
-result = searchPosition.Solution(nums, target);
-Console.WriteLine(result);
+//var searchPosition = new SearchInsertPosition();
+//int[] nums = [1, 3, 5, 6];
+//int target = 5;
+//var result = searchPosition.Solution(nums, target);
+//Console.WriteLine(result);
+//target = 2;
+//result = searchPosition.Solution(nums, target);
+//Console.WriteLine(result);
+//target = 7;
+//result = searchPosition.Solution(nums, target);
+//Console.WriteLine(result);
+#endregion
+
+#region Lenght of Last Word
+//var lenghtOfLastWord = new LenghtOfLastWord();
+//string word = "Hello World!";
+//var lenght = lenghtOfLastWord.Solution(word);
+//Console.WriteLine(lenght);
+//word = "   fliy me    to    the moon  ";
+//lenght = lenghtOfLastWord.Solution(word);
+//Console.WriteLine(lenght);
+//word = "luffy is still joyboy";
+//lenght = lenghtOfLastWord.Solution(word);
+//Console.WriteLine(lenght);
+#endregion
+
+#region Plus One
+var plusOne = new PlusOne();
+int[] digits = [1, 2, 3];
+var solution = plusOne.Solution(digits);
+Console.Write("[");
+foreach (int i in solution)
+{
+    Console.Write(i);
+    Console.Write(',');
+}
+Console.WriteLine("]");
+digits = [4,3,2,1];
+solution = plusOne.Solution(digits);
+Console.Write("[");
+foreach (int i in solution)
+{
+    Console.Write(i);
+    Console.Write(',');
+}
+Console.WriteLine("]");
+digits = [9];
+solution = plusOne.Solution(digits);
+Console.Write("[");
+foreach (int i in solution)
+{
+    Console.Write(i);
+    Console.Write(',');
+}
+Console.WriteLine("]");
+digits = [9,9,9];
+solution = plusOne.Solution(digits);
+Console.Write("[");
+foreach (int i in solution)
+{
+    Console.Write(i);
+    Console.Write(',');
+}
+Console.WriteLine("]");
+
 #endregion
