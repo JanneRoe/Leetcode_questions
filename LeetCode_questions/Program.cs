@@ -2,6 +2,7 @@
 using LeetCode_questions.Scripts;
 using LeetCode_questions.Scripts.Easy;
 using LeetCode_questions.Scripts.Medium;
+using LeetCode_questions.Utils;
 
 #region sumofdigitsofstring
 //while (true)
@@ -236,42 +237,58 @@ using LeetCode_questions.Scripts.Medium;
 #endregion
 
 #region Plus One
-var plusOne = new PlusOne();
-int[] digits = [1, 2, 3];
-var solution = plusOne.Solution(digits);
-Console.Write("[");
-foreach (int i in solution)
+//var plusOne = new PlusOne();
+//int[] digits = [1, 2, 3];
+//var solution = plusOne.Solution(digits);
+//Utils.PrintArray(solution);
+//digits = [4,3,2,1];
+//solution = plusOne.Solution(digits);
+//Utils.PrintArray(solution);
+//digits = [9];
+//solution = plusOne.Solution(digits);
+//Utils.PrintArray(solution);
+//digits = [9,9,9];
+//solution = plusOne.Solution(digits);
+//Utils.PrintArray(solution);
+#endregion
+
+#region Add Binary
+//var addBinary = new AddBinary();
+//string a = "11"; string b = "1";
+//var output = addBinary.Solution(a, b);
+//Console.WriteLine(output);
+//a = "1010"; b = "1011";
+//output = addBinary.Solution(a, b);
+//Console.WriteLine(output);
+#endregion
+
+#region Sqrt(x)
+//var mysqrt = new MySqrt();
+//var sol = mysqrt.Solution(4);
+//Console.WriteLine(sol);
+//sol = mysqrt.Solution(8);
+//Console.WriteLine(sol);
+//while (true)
+//{
+//    Console.Write("number: ");
+//    var n = Console.ReadLine()!;
+//    var number = int.Parse(n);
+//    sol = mysqrt.Solution(number);
+//    Console.WriteLine(sol);
+//}
+#endregion
+
+#region Climbing Stairs
+while (true)
 {
-    Console.Write(i);
-    Console.Write(',');
+    Console.Write("Number of steps to climb: ");
+    var userQuery = Console.ReadLine()!;
+    int factorial = int.Parse(userQuery);
+
+
+    var climbingStairs = new ClimbingStairs();
+    var sol = climbingStairs.Solution(factorial);
+    Console.WriteLine(sol);
 }
-Console.WriteLine("]");
-digits = [4,3,2,1];
-solution = plusOne.Solution(digits);
-Console.Write("[");
-foreach (int i in solution)
-{
-    Console.Write(i);
-    Console.Write(',');
-}
-Console.WriteLine("]");
-digits = [9];
-solution = plusOne.Solution(digits);
-Console.Write("[");
-foreach (int i in solution)
-{
-    Console.Write(i);
-    Console.Write(',');
-}
-Console.WriteLine("]");
-digits = [9,9,9];
-solution = plusOne.Solution(digits);
-Console.Write("[");
-foreach (int i in solution)
-{
-    Console.Write(i);
-    Console.Write(',');
-}
-Console.WriteLine("]");
 
 #endregion
