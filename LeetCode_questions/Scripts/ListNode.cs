@@ -35,6 +35,7 @@ namespace LeetCode_questions.Scripts
             return head;
         }
 
+
         public static void Print(ListNode head)
         {
             ListNode current = head;

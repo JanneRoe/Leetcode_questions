@@ -279,16 +279,27 @@ using LeetCode_questions.Utils;
 #endregion
 
 #region Climbing Stairs
-while (true)
-{
-    Console.Write("Number of steps to climb: ");
-    var userQuery = Console.ReadLine()!;
-    int.TryParse(userQuery, out int factorial);  
+//while (true)
+//{
+//    Console.Write("Number of steps to climb: ");
+//    var userQuery = Console.ReadLine()!;
+//    int.TryParse(userQuery, out int factorial);  
 
 
-    var climbingStairs = new ClimbingStairs();
-    var sol = climbingStairs.Solution(factorial);
-    Console.WriteLine(sol);
-}
+//    var climbingStairs = new ClimbingStairs();
+//    var sol = climbingStairs.Solution(factorial);
+//    Console.WriteLine(sol);
+//}
+#endregion
 
+#region RemoveDuplicatesFromSortedList
+var removeDuplicate = new RemoveDuplicatesFromSortedList();
+int[] values = [1, 1, 2];
+var head = ListNodeUtils.Create(values);
+var sol = removeDuplicate.Solution(head);
+ListNodeUtils.Print(sol);
+values = [1, 1, 2, 3, 3];
+head = ListNodeUtils.Create(values);
+sol = removeDuplicate.Solution(head);
+ListNodeUtils.Print(sol);
 #endregion
