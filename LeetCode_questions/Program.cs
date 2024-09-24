@@ -283,7 +283,7 @@ while (true)
 {
     Console.Write("Number of steps to climb: ");
     var userQuery = Console.ReadLine()!;
-    int factorial = int.Parse(userQuery);
+    int.TryParse(userQuery, out int factorial);  
 
 
     var climbingStairs = new ClimbingStairs();
