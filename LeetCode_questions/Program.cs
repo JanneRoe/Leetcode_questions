@@ -293,13 +293,29 @@ using LeetCode_questions.Utils;
 #endregion
 
 #region RemoveDuplicatesFromSortedList
-var removeDuplicate = new RemoveDuplicatesFromSortedList();
-int[] values = [1, 1, 2];
-var head = ListNodeUtils.Create(values);
-var sol = removeDuplicate.Solution(head);
-ListNodeUtils.Print(sol);
-values = [1, 1, 2, 3, 3];
-head = ListNodeUtils.Create(values);
-sol = removeDuplicate.Solution(head);
-ListNodeUtils.Print(sol);
+//var removeDuplicate = new RemoveDuplicatesFromSortedList();
+//int[] values = [1, 1, 2];
+//var head = ListNodeUtils.Create(values);
+//var sol = removeDuplicate.Solution(head);
+//ListNodeUtils.Print(sol);
+//values = [1, 1, 2, 3, 3];
+//head = ListNodeUtils.Create(values);
+//sol = removeDuplicate.Solution(head);
+//ListNodeUtils.Print(sol);
+
 #endregion
+
+#region MergeSortedArray
+var mergeArray = new MergeSortedArray();
+int[] nums1 = [1, 2, 3, 0, 0, 0]; int m = 3; int[] nums2 = [2, 5, 6]; int n = 3;
+mergeArray.Solution(nums1, m, nums2, n);
+Utils.PrintArray(nums1);
+nums1 = [1]; m = 1; nums2 = []; n = 0;
+mergeArray.Solution(nums1, m, nums2, n);
+Utils.PrintArray(nums1);
+nums1 = [0]; m = 0; nums2 = [1]; n = 1;
+mergeArray.Solution(nums1, m, nums2, n);
+Utils.PrintArray(nums1);
+#endregion
+
+
